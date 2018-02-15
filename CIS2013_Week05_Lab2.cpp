@@ -2,8 +2,7 @@
 using namespace std;
 
 void add_numbers(int& x, int y){
-	x+=y;
-	y+=y+10;
+	x-=y;
 }
 
 int main(){
@@ -16,7 +15,6 @@ int main(){
 	cout << "Enter second number: ";
 	cin >> second;
 	
-	//Start with first = 10 and second = 3
 	add_numbers(first, second);
 	cout << "The first time calling add_numbers is: " << first << endl;
 	add_numbers(first, second);
@@ -24,3 +22,4 @@ int main(){
 	add_numbers(first, second);
 	cout << "The third time calling add_numbers is: " << first << endl;
 }
+
